@@ -16,7 +16,7 @@ const page =() => {
 
   return (
     <div className=" text-white p-3 m-2">
-      <Button onClick={()=>invoke.mutate({text:"John"})}>
+      <Button disabled={invoke.isPending} onClick={()=>invoke.mutate({text:"John"})}>
         invoke job Background</Button>
     </div>
    
